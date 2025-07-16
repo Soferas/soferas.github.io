@@ -1,69 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>soferas.com.br – Em breve!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoFeras - Comunidade de Feras da Tecnologia</title>
   <style>
-    body {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; color: #333; }
+    header {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+      padding: 15px 30px;
+      background: #1f2937;
+      color: white;
+    }
+    .news-ticker {
+      flex: 1;
+      font-size: 0.9em;
+    }
+    .search-bar {
+      flex: 2;
       text-align: center;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
+    .search-bar input {
+      padding: 8px;
+      width: 60%;
+      border-radius: 4px;
+      border: none;
     }
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin-bottom: 2em;
-      line-height: 1.5;
+    .logo {
+      flex: 1;
+      text-align: right;
     }
-    a.button {
-      background-color: #00c3ff;
-      color: white;
-      padding: 15px 30px;
+    .logo img {
+      height: 40px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+      padding: 30px;
+    }
+    .description {
+      grid-column: span 2;
+      background: white;
+      padding: 20px;
       border-radius: 8px;
-      text-decoration: none;
-      font-size: 1em;
-      transition: background 0.3s ease;
     }
-    a.button:hover {
-      background-color: #0099cc;
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.9em;
-      color: #ccc;
+    .profile-card {
+      width: 150px;
+      background: white;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .profile-card img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    .news-feed {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="news-ticker">Dólar: R$5,36 | SP: 22°C 🌤️</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar feras por nome, tecnologia ou cidade...">
+    </div>
+    <div class="logo">
+      <img src="/mnt/data/ChatGPT Image 16 de jul. de 2025, 16_03_47.png" alt="SoFeras">
+    </div>
+  </header>
 
-  <h1>🧠 soferas.com.br</h1>
-  <p>
-    A nova comunidade dos feras da tecnologia está chegando.<br>
-    Um espaço feito para quem tem experiência de verdade, gosta de trocar conhecimento<br>
-    e quer estar entre os melhores.
-  </p>
+  <main>
+    <section class="description">
+      <h2>Bem-vindo à comunidade SoFeras</h2>
+      <p>Aqui você encontra os profissionais mais experientes da tecnologia. Conecte-se com feras da sua área, troque conhecimento, descubra talentos e participe de projetos incríveis.</p>
+    </section>
 
-  <a class="button" href="https://www.linkedin.com/in/joseroberto/" target="_blank">
-    Conheça o idealizador
-  </a>
+    <section class="profiles">
+      <div class="profile-card">
+        <img src="user1.jpg" alt="Fera 1">
+        <strong>Maria S.</strong>
+        <p>Especialista em Cloud AWS</p>
+      </div>
+      <div class="profile-card">
+        <img src="user2.jpg" alt="Fera 2">
+        <strong>João M.</strong>
+        <p>Consultor SAP S/4HANA</p>
+      </div>
+      <!-- outros cards -->
+    </section>
 
-  <footer>
-    © 2025 soferas.com.br — Em construção
-  </footer>
-
+    <aside class="news-feed">
+      <h3>Notícias e Insights</h3>
+      <ul>
+        <li><strong>OpenAI lança nova API para devs</strong> - Saiba mais sobre as novidades para desenvolvedores.</li>
+        <li><strong>Tech Summit 2025</strong> - Evento global de inovação e tecnologia confirmado para setembro.</li>
+      </ul>
+    </aside>
+  </main>
 </body>
 </html>
