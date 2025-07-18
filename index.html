@@ -1,114 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoFeras - Comunidade de Feras da Tecnologia</title>
+  <title>SoFeras</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; color: #333; }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #fff; color: #333; }
     header {
+      background: url('hero.jpg') no-repeat center center/cover;
+      color: white;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+    header a.button {
+      background-color: gold;
+      color: #333;
+      padding: 10px 25px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+    .about img {
+      width: 300px;
+      border-radius: 4px;
+    }
+    .services {
+      background: #f5f5f5;
+      text-align: center;
+    }
+    .service-cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+    .highlight {
+      background: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 1.5em;
+    }
+    .testimonial {
+      background: #fafafa;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact {
+      background: #f8f9fa;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background: #1f2937;
-      color: white;
+      padding: 60px 40px;
     }
-    .news-ticker {
-      flex: 1;
-      font-size: 0.9em;
+    .contact-info, .contact-form {
+      width: 45%;
     }
-    .search-bar {
-      flex: 2;
-      text-align: center;
-    }
-    .search-bar input {
-      padding: 8px;
-      width: 60%;
-      border-radius: 4px;
-      border: none;
-    }
-    .logo {
-      flex: 1;
-      text-align: right;
-    }
-    .logo img {
-      height: 40px;
-    }
-    main {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 30px;
-      padding: 30px;
-    }
-    .description {
-      grid-column: span 2;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .profiles {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .profile-card {
-      width: 150px;
-      background: white;
-      border-radius: 8px;
-      text-align: center;
-      padding: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .profile-card img {
+    .contact-form input, .contact-form textarea {
       width: 100%;
-      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-    .news-feed {
-      background: white;
+    footer {
+      background: #1f1f1f;
+      color: white;
+      text-align: center;
       padding: 20px;
-      border-radius: 8px;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="news-ticker">Dólar: R$5,36 | SP: 22°C 🌤️</div>
-    <div class="search-bar">
-      <input type="text" placeholder="Buscar feras por nome, tecnologia ou cidade...">
-    </div>
-    <div class="logo">
-      <img src="ChatGPT Image 16 de jul. de 2025, 16_03_47.png" alt="SoFeras">
-    </div>
+    <h1>SoFeras</h1>
+    <p>Elevate your social media presence</p>
+    <a href="#about" class="button">About</a>
   </header>
 
-  <main>
-    <section class="description">
-      <h2>Bem-vindo à comunidade SoFeras</h2>
-      <p>Aqui você encontra os profissionais mais experientes da tecnologia. Conecte-se com feras da sua área, troque conhecimento, descubra talentos e participe de projetos incríveis.</p>
-    </section>
+  <section id="about" class="about">
+    <img src="speaker.jpg" alt="SoFeras speaker">
+    <div>
+      <h2>About SoFeras</h2>
+      <p>At SoFeras, we transcend the conventional social media experience by providing a platform tailored for technology professionals. With a focus on bold connections and essential interactions, we aim to distinguish ourselves in a crowded digital space, fostering a community of market leaders and innovators.</p>
+    </div>
+  </section>
 
-    <section class="profiles">
-      <div class="profile-card">
-        <img src="user1.jpg" alt="Fera 1">
-        <strong>Maria S.</strong>
-        <p>Especialista em Cloud AWS</p>
+  <section class="services">
+    <h2>Services SoFeras offers</h2>
+    <p>Reach out for tailored strategies and expert support</p>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Profile enhancement</h3>
+        <p>We help you stand out in a sea of professionals.</p>
       </div>
-      <div class="profile-card">
-        <img src="user2.jpg" alt="Fera 2">
-        <strong>João M.</strong>
-        <p>Consultor SAP S/4HANA</p>
+      <div class="card">
+        <h3>Expert mentorship</h3>
+        <p>Our mentors guide you on building a strong network.</p>
       </div>
-      <!-- outros cards -->
-    </section>
+      <div class="card">
+        <h3>Community insights</h3>
+        <p>Navigate the tech scene with relevant insights.</p>
+      </div>
+    </div>
+  </section>
 
-    <aside class="news-feed">
-      <h3>Notícias e Insights</h3>
-      <ul>
-        <li><strong>OpenAI lança nova API para devs</strong> - Saiba mais sobre as novidades para desenvolvedores.</li>
-        <li><strong>Tech Summit 2025</strong> - Evento global de inovação e tecnologia confirmado para setembro.</li>
-      </ul>
-    </aside>
-  </main>
+  <div class="highlight">
+    Transforming digital networking with expertise and vision
+  </div>
+
+  <section class="testimonial">
+    <h3>Emily R.</h3>
+    <p>Collaborating with SoFeras was a pivotal moment. Their guidance led to invaluable connections.</p>
+  </section>
+
+  <section class="contact">
+    <div class="contact-info">
+      <h3>Our contacts</h3>
+      <p>3961 Small Street, New York, United States<br>646-975-9764<br>info@youraddress.com</p>
+    </div>
+    <div class="contact-form">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea rows="5" placeholder="Type your message here..."></textarea>
+      <button>Submit</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© All Rights Reserved. SoFeras</p>
+  </footer>
 </body>
 </html>
